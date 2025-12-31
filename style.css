@@ -1,27 +1,43 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 40px 20px; 
     font-family: 'Oswald', sans-serif; 
     background-color: #1a1a1a; 
     display: flex;
     justify-content: center;
+    align-items: center; 
     min-height: 100vh;
+    background-image: radial-gradient(#333 10%, #1a1a1a 90%); 
+    overflow-x: hidden; 
 }
 
 .main-container {
     width: 100%;
     max-width: 420px; 
     background-color: #ECE5CE; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    
+    
+    transform: rotate(-3deg); 
+    box-shadow: 15px 20px 30px rgba(0,0,0,0.4); 
+    border: 1px solid #d4cbb3; 
+   
+
     position: relative;
     padding-bottom: 20px;
+    transition: all 0.3s ease; 
+}
+
+
+.main-container:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
 }
 
 
 .header-section {
-    background-color: #D32F2F;
-    color: #FFD700;
+    background-color: #D32F2F; 
+    color: #FFD700; 
     padding: 20px;
     text-align: center;
     border-bottom: 4px solid #37474F;
@@ -88,14 +104,25 @@ body {
 .factory-image-placeholder {
     width: 100%;
     height: 180px;
-    background: linear-gradient(180deg, #cfd8dc 0%, #90a4ae 100%); 
+    background: linear-gradient(180deg, #cfd8dc 0%, #90a4ae 100%);
     position: relative;
     margin: 20px 0;
     border: 2px solid #37474F;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Factory_icon.svg/1024px-Factory_icon.svg.png'); 
-    background-size: contain;
+    
+    /* background-image: url('path/to/your/image.jpg'); */
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #37474F;
+    font-size: 3em;
+}
+
+.factory-image-placeholder::after {
+    content: "🏭"; 
 }
 
 .status-overlay {
@@ -234,12 +261,12 @@ body {
 }
 
 .btn-green {
-    background-color: #2E7D32 !important;
+    background-color: #2E7D32 !important; 
 }
 
 
 .hidden-message {
-    display: none; 
+    display: none;
     padding: 10px;
     margin-bottom: 15px;
     font-weight: bold;

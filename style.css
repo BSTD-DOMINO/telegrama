@@ -93,27 +93,18 @@ body {
     font-weight: bold;
 }
 
+
 .factory-image-placeholder {
     width: 100%;
     height: 180px;
-    background: linear-gradient(180deg, #cfd8dc 0%, #90a4ae 100%);
     position: relative;
     margin: 20px 0;
     border: 2px solid #37474F;
     
-    /* background-image: url('path/to/your/image.jpg'); */
+    background-image: url('https://raw.githubusercontent.com/BSTD-DOMINO/telegrama/main/Безымянный223.png');
+    
     background-size: cover;
     background-position: center;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #37474F;
-    font-size: 3em;
-}
-
-.factory-image-placeholder::after {
-    content: "🏭"; 
 }
 
 
@@ -139,13 +130,11 @@ body {
     text-transform: uppercase;
     line-height: 1.2;
     
-   
     width: auto !important; 
     flex: 0 0 auto; 
     display: inline-block;
     pointer-events: auto;
 }
-/
 
 .status-label.yellow { background-color: #FBC02D; color: #000; }
 .status-label.red { background-color: #D32F2F; }

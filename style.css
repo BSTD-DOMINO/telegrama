@@ -291,7 +291,6 @@ body {
     margin-top: 5px;
 }
 
-
 .burning-text {
     font-weight: 900; 
     color: #FF5722; 
@@ -333,4 +332,93 @@ body {
             0 0 8px #FF9800;
         opacity: 0.9;
     }
+}
+
+
+.coal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999; 
+    overflow: hidden;
+}
+
+
+.coal-piece {
+    position: absolute;
+    width: 50px; 
+    height: 50px;
+    
+    background-image: url('https://raw.githubusercontent.com/BSTD-DOMINO/telegrama/main/coal.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -150px;
+    opacity: 0.8;
+}
+
+
+@keyframes fly-and-spin {
+    0% {
+        left: -150px;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 110vw;
+        transform: rotate(720deg);
+    }
+}
+
+
+
+.coal-piece:nth-child(1) {
+    top: 10%; width: 80px; height: 80px;
+    animation: fly-and-spin 12s linear infinite; animation-delay: 0s;
+}
+
+.coal-piece:nth-child(2) {
+    top: 30%; width: 40px; height: 40px;
+    animation: fly-and-spin 7s linear infinite; animation-delay: 2s;
+}
+
+.coal-piece:nth-child(3) {
+    top: 50%; width: 60px; height: 60px;
+    animation: fly-and-spin 10s linear infinite; animation-delay: 1s;
+}
+
+.coal-piece:nth-child(4) {
+    top: 75%; width: 30px; height: 30px;
+    animation: fly-and-spin 5s linear infinite; animation-delay: 4s;
+}
+
+.coal-piece:nth-child(5) {
+    top: 5%; width: 70px; height: 70px;
+    animation: fly-and-spin 15s linear infinite; animation-delay: 3s;
+}
+
+.coal-piece:nth-child(6) {
+    top: 60%; width: 45px; height: 45px;
+    animation: fly-and-spin 8s linear infinite; animation-delay: 6s;
+}
+
+.coal-piece:nth-child(7) {
+    top: 85%; width: 100px; height: 100px;
+    animation: fly-and-spin 20s linear infinite; animation-delay: 1s;
+}
+
+.coal-piece:nth-child(8) {
+    top: 20%; width: 55px; height: 55px;
+    animation: fly-and-spin 11s linear infinite; animation-delay: 5s;
+}
+
+.coal-piece:nth-child(9) {
+    top: 45%; width: 35px; height: 35px;
+    animation: fly-and-spin 6s linear infinite; animation-delay: 8s;
+}
+
+.coal-piece:nth-child(10) {
+    top: 15%; width: 50px; height: 50px;
+    animation: fly-and-spin 9s linear infinite; animation-delay: 2.5s;
 }
